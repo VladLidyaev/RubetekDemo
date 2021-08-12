@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="RubetekTableViewHeader" id="iN0-l3-epB" customClass="RubetekTableViewHeader" customModule="rubetekDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pab-TQ-H3J">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OU-jt-UAP">
+                            <rect key="frame" x="20" y="0.0" width="374" height="818"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="1OU-jt-UAP" firstAttribute="top" secondItem="pab-TQ-H3J" secondAttribute="top" id="3OB-MM-8ou"/>
+                        <constraint firstAttribute="bottom" secondItem="1OU-jt-UAP" secondAttribute="bottom" id="9tj-XH-Ap9"/>
+                        <constraint firstAttribute="trailing" secondItem="1OU-jt-UAP" secondAttribute="trailing" constant="20" id="agR-7l-lrN"/>
+                        <constraint firstItem="1OU-jt-UAP" firstAttribute="leading" secondItem="pab-TQ-H3J" secondAttribute="leading" constant="20" id="vzj-8t-EtM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pab-TQ-H3J" secondAttribute="trailing" id="1mG-zD-BBl"/>
+                <constraint firstItem="pab-TQ-H3J" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9CD-iI-w5B"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="pab-TQ-H3J" secondAttribute="bottom" id="Lx3-lc-daM"/>
+                <constraint firstItem="pab-TQ-H3J" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="bhT-KW-7oS"/>
+            </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="1OU-jt-UAP" id="7R0-XB-9bx"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
+        </view>
+    </objects>
+</document>

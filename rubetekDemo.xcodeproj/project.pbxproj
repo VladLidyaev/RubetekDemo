@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F52204EB26C3538C00B18468 /* RubetekCameraTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52204EA26C3538C00B18468 /* RubetekCameraTableView.swift */; };
+		F52204F426C3570000B18468 /* RubetekDoorTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52204F326C3570000B18468 /* RubetekDoorTableView.swift */; };
+		F52204F826C36D1600B18468 /* allertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52204F726C36D1600B18468 /* allertExtension.swift */; };
+		F52204FD26C3F07A00B18468 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52204FC26C3F07A00B18468 /* DetailsViewController.swift */; };
+		F522050026C3F11200B18468 /* DetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52204FF26C3F11200B18468 /* DetailsViewController.storyboard */; };
+		F5890C1F26BEBEEC00A4BD5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890C1E26BEBEEC00A4BD5A /* AppDelegate.swift */; };
+		F5890C2126BEBEEC00A4BD5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890C2026BEBEEC00A4BD5A /* SceneDelegate.swift */; };
+		F5890C2326BEBEEC00A4BD5A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890C2226BEBEEC00A4BD5A /* HomeViewController.swift */; };
+		F5890C2626BEBEEC00A4BD5A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5890C2426BEBEEC00A4BD5A /* Home.storyboard */; };
+		F5890C2826BEBEED00A4BD5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5890C2726BEBEED00A4BD5A /* Assets.xcassets */; };
+		F5890C2B26BEBEED00A4BD5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5890C2926BEBEED00A4BD5A /* LaunchScreen.storyboard */; };
+		F5890C4326BEC9CA00A4BD5A /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890C4226BEC9CA00A4BD5A /* EndPointType.swift */; };
+		F5890C4626BED2CB00A4BD5A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890C4526BED2CA00A4BD5A /* HTTPMethod.swift */; };
+		F5890C4926BED2D800A4BD5A /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890C4826BED2D800A4BD5A /* HTTPTask.swift */; };
+		F5890C4C26BED2F500A4BD5A /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890C4B26BED2F500A4BD5A /* URLParameterEncoder.swift */; };
+		F5890C4F26BED72100A4BD5A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890C4E26BED72100A4BD5A /* NetworkError.swift */; };
+		F5890C5426BEE26C00A4BD5A /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890C5326BEE26C00A4BD5A /* JSONParameterEncoder.swift */; };
+		F5890C5826BEE34F00A4BD5A /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890C5726BEE34F00A4BD5A /* NetworkRouter.swift */; };
+		F5890C5C26BEED3700A4BD5A /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890C5B26BEED3700A4BD5A /* ParameterEncoder.swift */; };
+		F5890C6126C0477300A4BD5A /* RubetekEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890C6026C0477300A4BD5A /* RubetekEndPoint.swift */; };
+		F5890C6626C04B9700A4BD5A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5890C6526C04B9700A4BD5A /* NetworkManager.swift */; };
+		F5C19B8726C2607E008D149F /* ScrollPagesControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C19B8626C2607E008D149F /* ScrollPagesControl.swift */; };
+		F5C19B8A26C2608B008D149F /* ScrollPagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C19B8926C2608B008D149F /* ScrollPagesView.swift */; };
+		F5C7963F26C32A0600A839EB /* RubetekTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C7963E26C32A0600A839EB /* RubetekTableViewHeader.swift */; };
+		F5C7964526C32BFC00A839EB /* RubetekTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5C7964426C32BFC00A839EB /* RubetekTableViewHeader.xib */; };
+		F5C7964926C32CFA00A839EB /* RubetekCameraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C7964726C32CFA00A839EB /* RubetekCameraCell.swift */; };
+		F5C7964A26C32CFA00A839EB /* RubetekCameraCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5C7964826C32CFA00A839EB /* RubetekCameraCell.xib */; };
+		F5C7965426C3412F00A839EB /* RubetekDoorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C7965226C3412F00A839EB /* RubetekDoorCell.swift */; };
+		F5C7965526C3412F00A839EB /* RubetekDoorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5C7965326C3412F00A839EB /* RubetekDoorCell.xib */; };
+		F5C7965926C34C8100A839EB /* RubetekCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C7965826C34C8100A839EB /* RubetekCell.swift */; };
+		F5CE9A0C26C319B200115A2A /* PageSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CE9A0B26C319B200115A2A /* PageSubscriber.swift */; };
+		F5CE9A1126C3204000115A2A /* RubetekTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CE9A1026C3204000115A2A /* RubetekTableView.swift */; };
+		F5CE9A1526C3233D00115A2A /* RubetekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CE9A1426C3233D00115A2A /* RubetekViewController.swift */; };
+		F5EB662426C1663C007D2747 /* cameraDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EB662326C1663C007D2747 /* cameraDecodable.swift */; };
+		F5EB662726C1664A007D2747 /* doorDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EB662626C1664A007D2747 /* doorDecodable.swift */; };
+		F5EB662A26C16B75007D2747 /* DoorRubetek.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EB662926C16B75007D2747 /* DoorRubetek.swift */; };
+		F5F5C53C26C1106A00583D88 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F5F5C53B26C1106A00583D88 /* RealmSwift */; };
+		F5F5C54126C113A500583D88 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F5C54026C113A500583D88 /* RealmManager.swift */; };
+		F5F5C55226C11B9700583D88 /* RubetekObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F5C55126C11B9700583D88 /* RubetekObject.swift */; };
+		F5F5C55E26C1326300583D88 /* RealmError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F5C55D26C1326300583D88 /* RealmError.swift */; };
+		F5F5C56A26C1486800583D88 /* CameraRubetek.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F5C56926C1486800583D88 /* CameraRubetek.swift */; };
+		F5F5C56E26C14AE600583D88 /* Configurates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F5C56D26C14AE600583D88 /* Configurates.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F52204EA26C3538C00B18468 /* RubetekCameraTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubetekCameraTableView.swift; sourceTree = "<group>"; };
+		F52204F326C3570000B18468 /* RubetekDoorTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubetekDoorTableView.swift; sourceTree = "<group>"; };
+		F52204F726C36D1600B18468 /* allertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allertExtension.swift; sourceTree = "<group>"; };
+		F52204FC26C3F07A00B18468 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		F52204FF26C3F11200B18468 /* DetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsViewController.storyboard; sourceTree = "<group>"; };
+		F5890C1B26BEBEEC00A4BD5A /* rubetekDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rubetekDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5890C1E26BEBEEC00A4BD5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5890C2026BEBEEC00A4BD5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F5890C2226BEBEEC00A4BD5A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F5890C2526BEBEEC00A4BD5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		F5890C2726BEBEED00A4BD5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5890C2A26BEBEED00A4BD5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5890C2C26BEBEED00A4BD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5890C4226BEC9CA00A4BD5A /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		F5890C4526BED2CA00A4BD5A /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		F5890C4826BED2D800A4BD5A /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		F5890C4B26BED2F500A4BD5A /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		F5890C4E26BED72100A4BD5A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F5890C5326BEE26C00A4BD5A /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		F5890C5726BEE34F00A4BD5A /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		F5890C5B26BEED3700A4BD5A /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
+		F5890C6026C0477300A4BD5A /* RubetekEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubetekEndPoint.swift; sourceTree = "<group>"; };
+		F5890C6526C04B9700A4BD5A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F5C19B8626C2607E008D149F /* ScrollPagesControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPagesControl.swift; sourceTree = "<group>"; };
+		F5C19B8926C2608B008D149F /* ScrollPagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPagesView.swift; sourceTree = "<group>"; };
+		F5C7963E26C32A0600A839EB /* RubetekTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubetekTableViewHeader.swift; sourceTree = "<group>"; };
+		F5C7964426C32BFC00A839EB /* RubetekTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RubetekTableViewHeader.xib; sourceTree = "<group>"; };
+		F5C7964726C32CFA00A839EB /* RubetekCameraCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubetekCameraCell.swift; sourceTree = "<group>"; };
+		F5C7964826C32CFA00A839EB /* RubetekCameraCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RubetekCameraCell.xib; sourceTree = "<group>"; };
+		F5C7965226C3412F00A839EB /* RubetekDoorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubetekDoorCell.swift; sourceTree = "<group>"; };
+		F5C7965326C3412F00A839EB /* RubetekDoorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RubetekDoorCell.xib; sourceTree = "<group>"; };
+		F5C7965826C34C8100A839EB /* RubetekCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubetekCell.swift; sourceTree = "<group>"; };
+		F5CE9A0B26C319B200115A2A /* PageSubscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageSubscriber.swift; sourceTree = "<group>"; };
+		F5CE9A1026C3204000115A2A /* RubetekTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubetekTableView.swift; sourceTree = "<group>"; };
+		F5CE9A1426C3233D00115A2A /* RubetekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubetekViewController.swift; sourceTree = "<group>"; };
+		F5EB662326C1663C007D2747 /* cameraDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraDecodable.swift; sourceTree = "<group>"; };
+		F5EB662626C1664A007D2747 /* doorDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doorDecodable.swift; sourceTree = "<group>"; };
+		F5EB662926C16B75007D2747 /* DoorRubetek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorRubetek.swift; sourceTree = "<group>"; };
+		F5F5C54026C113A500583D88 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		F5F5C55126C11B9700583D88 /* RubetekObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubetekObject.swift; sourceTree = "<group>"; };
+		F5F5C55D26C1326300583D88 /* RealmError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmError.swift; sourceTree = "<group>"; };
+		F5F5C56926C1486800583D88 /* CameraRubetek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRubetek.swift; sourceTree = "<group>"; };
+		F5F5C56D26C14AE600583D88 /* Configurates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurates.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5890C1826BEBEEC00A4BD5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5F5C53C26C1106A00583D88 /* RealmSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F52204E826C352D400B18468 /* RubetekCameraTableView */ = {
+			isa = PBXGroup;
+			children = (
+				F5C7965026C340EF00A839EB /* RubetekCameraCell */,
+				F52204EA26C3538C00B18468 /* RubetekCameraTableView.swift */,
+			);
+			path = RubetekCameraTableView;
+			sourceTree = "<group>";
+		};
+		F52204E926C352E100B18468 /* RubetekDoorTableView */ = {
+			isa = PBXGroup;
+			children = (
+				F5C7965126C340FF00A839EB /* RubetekDoorCell */,
+				F52204F326C3570000B18468 /* RubetekDoorTableView.swift */,
+				F52204F726C36D1600B18468 /* allertExtension.swift */,
+			);
+			path = RubetekDoorTableView;
+			sourceTree = "<group>";
+		};
+		F5890C1226BEBEEC00A4BD5A = {
+			isa = PBXGroup;
+			children = (
+				F5890C1D26BEBEEC00A4BD5A /* rubetekDemo */,
+				F5890C1C26BEBEEC00A4BD5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5890C1C26BEBEEC00A4BD5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5890C1B26BEBEEC00A4BD5A /* rubetekDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5890C1D26BEBEEC00A4BD5A /* rubetekDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F5890C2C26BEBEED00A4BD5A /* Info.plist */,
+				F5890C3326BEBF1000A4BD5A /* Main */,
+				F5890C3426BEBF1D00A4BD5A /* Modules */,
+			);
+			path = rubetekDemo;
+			sourceTree = "<group>";
+		};
+		F5890C3326BEBF1000A4BD5A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F5F5C53626C059DB00583D88 /* UIComponents */,
+				F5890C4026BEC8EE00A4BD5A /* NetworkManager */,
+				F5F5C53726C059E700583D88 /* RealmManager */,
+				F5EB662C26C1F2C6007D2747 /* ErrorManager */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F5890C3426BEBF1D00A4BD5A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F5CE9A1726C323B600115A2A /* UIComponents */,
+				F5890C3626BEBF5B00A4BD5A /* Delegate */,
+				F5890C3726BEBF6400A4BD5A /* Resources */,
+				F5890C3826BEBF9C00A4BD5A /* Screens */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F5890C3626BEBF5B00A4BD5A /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F5890C1E26BEBEEC00A4BD5A /* AppDelegate.swift */,
+				F5890C2026BEBEEC00A4BD5A /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		F5890C3726BEBF6400A4BD5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5890C2726BEBEED00A4BD5A /* Assets.xcassets */,
+				F5F5C56D26C14AE600583D88 /* Configurates.swift */,
+				F5EB662326C1663C007D2747 /* cameraDecodable.swift */,
+				F5EB662626C1664A007D2747 /* doorDecodable.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F5890C3826BEBF9C00A4BD5A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F5890C3A26BEBFAC00A4BD5A /* Launch */,
+				F5890C3926BEBFA500A4BD5A /* Home */,
+				F5890C3B26BEBFCA00A4BD5A /* Details */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F5890C3926BEBFA500A4BD5A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F5F5C56326C147D900583D88 /* Model */,
+				F5F5C56526C147EF00583D88 /* View */,
+				F5F5C56426C147E200583D88 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F5890C3A26BEBFAC00A4BD5A /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				F5890C2926BEBEED00A4BD5A /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		F5890C3B26BEBFCA00A4BD5A /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				F5F5C56626C1480300583D88 /* Model */,
+				F5F5C56826C1481200583D88 /* View */,
+				F5F5C56726C1480800583D88 /* Controller */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		F5890C4026BEC8EE00A4BD5A /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				F5890C6426C04B8500A4BD5A /* Manager */,
+				F5890C5F26C0473200A4BD5A /* EndPoind */,
+				F5890C5226BEE21B00A4BD5A /* NetworkError */,
+				F5890C5126BEE1FE00A4BD5A /* Encode */,
+				F5890C4126BEC98D00A4BD5A /* Service */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		F5890C4126BEC98D00A4BD5A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F5890C5726BEE34F00A4BD5A /* NetworkRouter.swift */,
+				F5890C4226BEC9CA00A4BD5A /* EndPointType.swift */,
+				F5890C4526BED2CA00A4BD5A /* HTTPMethod.swift */,
+				F5890C4826BED2D800A4BD5A /* HTTPTask.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F5890C5126BEE1FE00A4BD5A /* Encode */ = {
+			isa = PBXGroup;
+			children = (
+				F5890C5B26BEED3700A4BD5A /* ParameterEncoder.swift */,
+				F5890C4B26BED2F500A4BD5A /* URLParameterEncoder.swift */,
+				F5890C5326BEE26C00A4BD5A /* JSONParameterEncoder.swift */,
+			);
+			path = Encode;
+			sourceTree = "<group>";
+		};
+		F5890C5226BEE21B00A4BD5A /* NetworkError */ = {
+			isa = PBXGroup;
+			children = (
+				F5890C4E26BED72100A4BD5A /* NetworkError.swift */,
+			);
+			path = NetworkError;
+			sourceTree = "<group>";
+		};
+		F5890C5F26C0473200A4BD5A /* EndPoind */ = {
+			isa = PBXGroup;
+			children = (
+				F5890C6026C0477300A4BD5A /* RubetekEndPoint.swift */,
+			);
+			path = EndPoind;
+			sourceTree = "<group>";
+		};
+		F5890C6426C04B8500A4BD5A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F5890C6526C04B9700A4BD5A /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F5C19B8526C2604E008D149F /* ScrollPages */ = {
+			isa = PBXGroup;
+			children = (
+				F5C19B8626C2607E008D149F /* ScrollPagesControl.swift */,
+				F5C19B8926C2608B008D149F /* ScrollPagesView.swift */,
+				F5CE9A0B26C319B200115A2A /* PageSubscriber.swift */,
+			);
+			path = ScrollPages;
+			sourceTree = "<group>";
+		};
+		F5C7963D26C329C100A839EB /* RubetekTableViewHeader */ = {
+			isa = PBXGroup;
+			children = (
+				F5C7963E26C32A0600A839EB /* RubetekTableViewHeader.swift */,
+				F5C7964426C32BFC00A839EB /* RubetekTableViewHeader.xib */,
+			);
+			path = RubetekTableViewHeader;
+			sourceTree = "<group>";
+		};
+		F5C7965026C340EF00A839EB /* RubetekCameraCell */ = {
+			isa = PBXGroup;
+			children = (
+				F5C7964726C32CFA00A839EB /* RubetekCameraCell.swift */,
+				F5C7964826C32CFA00A839EB /* RubetekCameraCell.xib */,
+			);
+			path = RubetekCameraCell;
+			sourceTree = "<group>";
+		};
+		F5C7965126C340FF00A839EB /* RubetekDoorCell */ = {
+			isa = PBXGroup;
+			children = (
+				F5C7965226C3412F00A839EB /* RubetekDoorCell.swift */,
+				F5C7965326C3412F00A839EB /* RubetekDoorCell.xib */,
+			);
+			path = RubetekDoorCell;
+			sourceTree = "<group>";
+		};
+		F5CE9A0E26C3201B00115A2A /* RubetekTableView */ = {
+			isa = PBXGroup;
+			children = (
+				F5CE9A1026C3204000115A2A /* RubetekTableView.swift */,
+				F5C7965826C34C8100A839EB /* RubetekCell.swift */,
+				F52204E926C352E100B18468 /* RubetekDoorTableView */,
+				F52204E826C352D400B18468 /* RubetekCameraTableView */,
+				F5C7963D26C329C100A839EB /* RubetekTableViewHeader */,
+			);
+			path = RubetekTableView;
+			sourceTree = "<group>";
+		};
+		F5CE9A0F26C3202500115A2A /* RubetekViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5CE9A1426C3233D00115A2A /* RubetekViewController.swift */,
+			);
+			path = RubetekViewController;
+			sourceTree = "<group>";
+		};
+		F5CE9A1726C323B600115A2A /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F5CE9A0F26C3202500115A2A /* RubetekViewController */,
+				F5CE9A0E26C3201B00115A2A /* RubetekTableView */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		F5EB662C26C1F2C6007D2747 /* ErrorManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ErrorManager;
+			sourceTree = "<group>";
+		};
+		F5F5C53626C059DB00583D88 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F5C19B8526C2604E008D149F /* ScrollPages */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		F5F5C53726C059E700583D88 /* RealmManager */ = {
+			isa = PBXGroup;
+			children = (
+				F5F5C53F26C111E500583D88 /* Manager */,
+				F5F5C55026C11B6C00583D88 /* RubetekObject */,
+				F5F5C55C26C1325300583D88 /* RealmError */,
+			);
+			path = RealmManager;
+			sourceTree = "<group>";
+		};
+		F5F5C53F26C111E500583D88 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F5F5C54026C113A500583D88 /* RealmManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F5F5C55026C11B6C00583D88 /* RubetekObject */ = {
+			isa = PBXGroup;
+			children = (
+				F5F5C55126C11B9700583D88 /* RubetekObject.swift */,
+			);
+			path = RubetekObject;
+			sourceTree = "<group>";
+		};
+		F5F5C55C26C1325300583D88 /* RealmError */ = {
+			isa = PBXGroup;
+			children = (
+				F5F5C55D26C1326300583D88 /* RealmError.swift */,
+			);
+			path = RealmError;
+			sourceTree = "<group>";
+		};
+		F5F5C56326C147D900583D88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5F5C56926C1486800583D88 /* CameraRubetek.swift */,
+				F5EB662926C16B75007D2747 /* DoorRubetek.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5F5C56426C147E200583D88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5890C2226BEBEEC00A4BD5A /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5F5C56526C147EF00583D88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5890C2426BEBEEC00A4BD5A /* Home.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5F5C56626C1480300583D88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5F5C56726C1480800583D88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F52204FC26C3F07A00B18468 /* DetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5F5C56826C1481200583D88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F52204FF26C3F11200B18468 /* DetailsViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5890C1A26BEBEEC00A4BD5A /* rubetekDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5890C2F26BEBEED00A4BD5A /* Build configuration list for PBXNativeTarget "rubetekDemo" */;
+			buildPhases = (
+				F5890C1726BEBEEC00A4BD5A /* Sources */,
+				F5890C1826BEBEEC00A4BD5A /* Frameworks */,
+				F5890C1926BEBEEC00A4BD5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rubetekDemo;
+			packageProductDependencies = (
+				F5F5C53B26C1106A00583D88 /* RealmSwift */,
+			);
+			productName = rubetekDemo;
+			productReference = F5890C1B26BEBEEC00A4BD5A /* rubetekDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5890C1326BEBEEC00A4BD5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F5890C1A26BEBEEC00A4BD5A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = F5890C1626BEBEEC00A4BD5A /* Build configuration list for PBXProject "rubetekDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5890C1226BEBEEC00A4BD5A;
+			packageReferences = (
+				F5F5C53A26C1106900583D88 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
+			productRefGroup = F5890C1C26BEBEEC00A4BD5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5890C1A26BEBEEC00A4BD5A /* rubetekDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5890C1926BEBEEC00A4BD5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C7965526C3412F00A839EB /* RubetekDoorCell.xib in Resources */,
+				F5890C2B26BEBEED00A4BD5A /* LaunchScreen.storyboard in Resources */,
+				F5C7964526C32BFC00A839EB /* RubetekTableViewHeader.xib in Resources */,
+				F5890C2826BEBEED00A4BD5A /* Assets.xcassets in Resources */,
+				F5890C2626BEBEEC00A4BD5A /* Home.storyboard in Resources */,
+				F5C7964A26C32CFA00A839EB /* RubetekCameraCell.xib in Resources */,
+				F522050026C3F11200B18468 /* DetailsViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5890C1726BEBEEC00A4BD5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5CE9A0C26C319B200115A2A /* PageSubscriber.swift in Sources */,
+				F5CE9A1526C3233D00115A2A /* RubetekViewController.swift in Sources */,
+				F5890C4926BED2D800A4BD5A /* HTTPTask.swift in Sources */,
+				F5EB662726C1664A007D2747 /* doorDecodable.swift in Sources */,
+				F5890C4F26BED72100A4BD5A /* NetworkError.swift in Sources */,
+				F5C7964926C32CFA00A839EB /* RubetekCameraCell.swift in Sources */,
+				F5890C4326BEC9CA00A4BD5A /* EndPointType.swift in Sources */,
+				F5890C2326BEBEEC00A4BD5A /* HomeViewController.swift in Sources */,
+				F5CE9A1126C3204000115A2A /* RubetekTableView.swift in Sources */,
+				F52204FD26C3F07A00B18468 /* DetailsViewController.swift in Sources */,
+				F5EB662A26C16B75007D2747 /* DoorRubetek.swift in Sources */,
+				F5890C1F26BEBEEC00A4BD5A /* AppDelegate.swift in Sources */,
+				F5F5C55226C11B9700583D88 /* RubetekObject.swift in Sources */,
+				F5F5C55E26C1326300583D88 /* RealmError.swift in Sources */,
+				F5F5C56A26C1486800583D88 /* CameraRubetek.swift in Sources */,
+				F5F5C54126C113A500583D88 /* RealmManager.swift in Sources */,
+				F5890C6626C04B9700A4BD5A /* NetworkManager.swift in Sources */,
+				F5890C5426BEE26C00A4BD5A /* JSONParameterEncoder.swift in Sources */,
+				F5C19B8A26C2608B008D149F /* ScrollPagesView.swift in Sources */,
+				F5C19B8726C2607E008D149F /* ScrollPagesControl.swift in Sources */,
+				F5890C5C26BEED3700A4BD5A /* ParameterEncoder.swift in Sources */,
+				F52204EB26C3538C00B18468 /* RubetekCameraTableView.swift in Sources */,
+				F52204F426C3570000B18468 /* RubetekDoorTableView.swift in Sources */,
+				F5C7965926C34C8100A839EB /* RubetekCell.swift in Sources */,
+				F5C7963F26C32A0600A839EB /* RubetekTableViewHeader.swift in Sources */,
+				F52204F826C36D1600B18468 /* allertExtension.swift in Sources */,
+				F5890C4626BED2CB00A4BD5A /* HTTPMethod.swift in Sources */,
+				F5890C5826BEE34F00A4BD5A /* NetworkRouter.swift in Sources */,
+				F5C7965426C3412F00A839EB /* RubetekDoorCell.swift in Sources */,
+				F5890C2126BEBEEC00A4BD5A /* SceneDelegate.swift in Sources */,
+				F5890C4C26BED2F500A4BD5A /* URLParameterEncoder.swift in Sources */,
+				F5EB662426C1663C007D2747 /* cameraDecodable.swift in Sources */,
+				F5890C6126C0477300A4BD5A /* RubetekEndPoint.swift in Sources */,
+				F5F5C56E26C14AE600583D88 /* Configurates.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F5890C2426BEBEEC00A4BD5A /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5890C2526BEBEEC00A4BD5A /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		F5890C2926BEBEED00A4BD5A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5890C2A26BEBEED00A4BD5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5890C2D26BEBEED00A4BD5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5890C2E26BEBEED00A4BD5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5890C3026BEBEED00A4BD5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5XX5CN4AGT;
+				INFOPLIST_FILE = rubetekDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rubetek.rubetekDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5890C3126BEBEED00A4BD5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5XX5CN4AGT;
+				INFOPLIST_FILE = rubetekDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rubetek.rubetekDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5890C1626BEBEEC00A4BD5A /* Build configuration list for PBXProject "rubetekDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5890C2D26BEBEED00A4BD5A /* Debug */,
+				F5890C2E26BEBEED00A4BD5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5890C2F26BEBEED00A4BD5A /* Build configuration list for PBXNativeTarget "rubetekDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5890C3026BEBEED00A4BD5A /* Debug */,
+				F5890C3126BEBEED00A4BD5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F5F5C53A26C1106900583D88 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F5F5C53B26C1106A00583D88 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5F5C53A26C1106900583D88 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F5890C1326BEBEEC00A4BD5A /* Project object */;
+}
